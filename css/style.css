@@ -225,11 +225,13 @@ body {
 
 #i-frames {
     display: flex;
+    flex-direction: column;
     margin: 100px auto;
-    justify-content: space-around;
+/*    justify-content: space-around;*/
     flex-wrap: wrap;
     width: 900px;
     height: 100%;
+    
 }
 
 footer {
