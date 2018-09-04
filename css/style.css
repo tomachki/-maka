@@ -223,6 +223,33 @@ body {
 
 }
 
+
+.links {
+    text-decoration: none;
+    color: #0E467D;
+    padding: 15px 5px;
+    margin: 5px;
+}
+
+.links:hover {
+    text-decoration: underline;
+/*    color: #1466b8;*/
+}
+
+
+.exercises {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 50px;
+    margin: 100px auto;
+    text-align: center;
+    background-color: white;
+    text-align: left;
+    border-radius: 7px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, .3);
+}
+
 #i-frames {
     display: flex;
     flex-direction: column;
