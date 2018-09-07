@@ -49,7 +49,7 @@ body {
     text-decoration: none;
     padding: 10px;
     margin: 0 10px;
-    border-radius: 3px;
+    border-radius: 50px;
     color: #0E467D;
 }
 
@@ -114,6 +114,28 @@ body {
     box-shadow: 4px 4px 30px rgba(0, 0, 0, .4);
 }
 
+
+.container {
+    margin: auto;
+    width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.videos{
+    width: 500px;
+    height: 500px;
+/*    background-color: #0E467D;*/
+    background-color: #009999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    border-radius: 30px;
+    margin: 50px 0;
+}
 
 #side-menu {
     position: fixed;
