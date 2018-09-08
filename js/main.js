@@ -15,19 +15,17 @@ function closeMenu() {
     document.getElementById("side-menu").style.width = "0";
 }
 
-//function search() {
-//    // div - iframe
-//    // get p: ps mivce klasi satauri. 
-//    var p = document.getElementsByTagName("p");
-//    var i;
-//    var input = document.getElementById("vidInput");
-//    var videos = document.getElementsByClassName("videos");
-//    
-//    for(i = 0; i < p.length; i++){
-//        if(p[i] == input.innerHTML){
-//            videos[i].style.display = "";
-//        } else{
-//            videos[i].style.display = "none";
-//        }
-//    }
-//}
+function search() {
+    var input, divs, p, i;
+    var input = document.getElementsByTagName("input")[0].value;
+    divs = document.getElementsByClassName("videos");
+    
+    for(i = 0; i < divs.length; i++){
+        p = divs[i].getElementsByTagName("p")[0];
+        if(p.innerHTML == input){
+            divs[i].style.display = "";
+        }else {
+            divs[i].style.display = "none";
+        }
+    }
+}

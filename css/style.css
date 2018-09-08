@@ -1,5 +1,6 @@
 /* NEED DROP MENU FOR MOBILE */
 
+
 body {
     margin: 0;
     font-family: "BPG Arial", sans-serif;
@@ -120,12 +121,13 @@ body {
 
 
 .container {
-    margin: auto;
-    width: 1200px;
+    margin: 0 auto;
+/*    width: 1200px;*/
     height: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+/*    flex-direction: row;*/
+/*    justify-content: space-around;*/
+    margin-bottom: 100px;
 }
 
 .videos {
@@ -147,7 +149,20 @@ body {
     align-items: center;
 }
 
-#vidInput {
+.input {
+    display: flex;
+    align-items: center;
+}
+
+#icon {
+    background-color: white;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.vidInput {
 /*    background-color: #f4f4f4;*/
     font-size: 1em;
     padding: 10px 14px;
@@ -310,6 +325,9 @@ footer {
     height: 100px;
     color: #0E467D;
     text-align: center;
+/*    position: fixed;*/
+    width: 100%;
+/*    bottom: 0;*/
 }
 
 footer a {
