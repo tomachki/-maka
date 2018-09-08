@@ -2,6 +2,21 @@ function openMenu() {
     document.getElementById("side-menu").style.width = "300px";
 }
 
+function searchLessons() {
+    var input, lessons, i;  
+    input = document.getElementsByClassName("vidInput")[0].value;
+    lessons = document.getElementsByClassName("lessons");
+    
+    for(i = 0; i < lessons.length; i++){
+        
+        if(lessons[i].text == input){
+            lessons[i].style.display = "";
+        }else {
+            lessons[i].style.display = "none";
+        }
+    }
+}
+
 function shrinkMenu(){
     document.getElementById("mob-dropdown").style.display = "none";
     document.getElementById("drop-1").style.backgroundColor = "inherit";
@@ -29,3 +44,4 @@ function search() {
         }
     }
 }
+
